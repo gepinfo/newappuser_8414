@@ -9,7 +9,7 @@ export const nameSchema = new Schema({
    last_modified_by: { type: String },
    last_modified_date: { type: Date, default: Date.now },
    name: String,
-   address: { type: Schema.Types.String, ref: 'address' }
+   address: [{ type: Schema.Types.ObjectId, ref: 'address' }]
 })
 
 const nameModel = mongoose.model('name', nameSchema, 'name');

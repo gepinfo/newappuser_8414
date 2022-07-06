@@ -202,7 +202,7 @@ services:
     image: systementry-8414
     container_name: systementry-8414
     ports: 
-      - 8010:8010
+      - 8012:8012
     env_file: .env
     depends_on:
       - mongo
